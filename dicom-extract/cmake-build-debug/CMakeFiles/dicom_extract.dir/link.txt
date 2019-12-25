@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/dicom_extract.dir/main.cpp.o CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o CMakeFiles/dicom_extract.dir/src/dicom.cpp.o  -o dicom_extract 
