@@ -18,6 +18,8 @@ public:
 private slots:
     void on_actionSelect_Image_triggered();
 
+    void on_actionSave_Image_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

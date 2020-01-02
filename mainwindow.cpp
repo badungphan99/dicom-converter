@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionSelect_Image_triggered()
 {
-    const QString folderPath = QFileDialog::getOpenFileName(this, "Select file", "Images(*.png, *.jpg)");
+    const QString folderPath = QFileDialog::getOpenFileName(this, "Select file",QString(), tr("Images(*.png *.jpg)"));
 
     if(!folderPath.isEmpty()){
         int w = ui->label_pic->width();
@@ -27,4 +27,20 @@ void MainWindow::on_actionSelect_Image_triggered()
         QImage image(folderPath);
         ui->label_pic->setPixmap(QPixmap::fromImage(image.scaled(w, h, Qt::KeepAspectRatio)));
     }
+}
+
+
+void MainWindow::on_actionSave_Image_triggered()
+{
+
+    const QString fileName = QFileDialog::getSaveFileName(this, "Save file",QString(), "Images(*.png *.jpg)");
+
+    const QPixmap* pixmap = ui->label_pic->pixmap();
+    if (pixmap){
+        QImage image1(pixmap -> toImage());
+        if (!fileName.isEmpty()){
+            image1.save(fileName);
+        }
+    }
+
 }
