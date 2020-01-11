@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include <QStringList>
 #include <QDir>
+#include "include/core.h"
+#include "include/dicom.h"
+#include "include/dicom_extract.h"
+#include "include/system_manager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

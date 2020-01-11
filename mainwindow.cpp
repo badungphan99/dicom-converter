@@ -67,6 +67,14 @@ void MainWindow::on_actionLoad_Image_triggered()
     listFolderPath = QFileDialog::getExistingDirectory(this, "Select file","/home",QFileDialog::ShowDirsOnly);
 
     std::cout << listFolderPath.toStdString() << std::endl;
+    // duong dan thu muc out
+    std::string pathOut;
+    // cac thong tin tra ve, hien tai khong co gi dau
+    std::vector<std::string> info;
+
+    dicom_extract::extract_info(listFolderPath.toStdString(), pathOut, info);
+
+    std::cout << "extract xong\n";
 
     QDir directory(listFolderPath);
     images = directory.entryList(QStringList() << "*.jpg" << "*.JPG",QDir::Files);

@@ -2,16 +2,24 @@
 // Created by dungpb on 25/12/2019.
 //
 
-#include "dicom_extract.h"
-#include "system_manager.h"
+#include <opencv2/imgcodecs.hpp>
+#include "../include/dicom_extract.h"
+#include "../include/system_manager.h"
 
-int dicom_extract::extract_info(const std::string &pathIn, std::vector<Dicom> &res) {
+int dicom_extract::extract_info(const std::string &pathIn, std::string &pathOut, std::vector<std::string> &res) {
+
+    pathOut = "/tmp/dungpbhoangnvcucntkhanhptt";
+
+    sysm::createDir(pathOut);
+
     std::vector<std::string> listFile;
     sysm::loadFile(pathIn, listFile);
     for(int i = 0; i < listFile.size(); i++){
         Dicom dicom;
         dicom_img_to_mat(pathIn, listFile[i], dicom);
-        res.push_back(dicom);
+        std::string pathImg = pathOut + "/" + listFile[i] + ".png";
+        cv::imwrite(pathImg, dicom.getImgData());
+        std::cout << pathImg << "\n";
     }
     return 0;
 }
