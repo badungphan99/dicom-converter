@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1350</width>
-    <height>800</height>
+    <width>1338</width>
+    <height>737</height>
    </rect>
   </property>
   <property name="sizeIncrement">
@@ -34,7 +34,7 @@
      <rect>
       <x>70</x>
       <y>20</y>
-      <width>1000</width>
+      <width>971</width>
       <height>581</height>
      </rect>
     </property>
@@ -45,10 +45,10 @@
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>1080</x>
-      <y>20</y>
+      <x>1060</x>
+      <y>10</y>
       <width>16</width>
-      <height>301</height>
+      <height>591</height>
      </rect>
     </property>
     <property name="orientation">
@@ -58,10 +58,10 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>1110</x>
+      <x>1090</x>
       <y>20</y>
-      <width>191</width>
-      <height>121</height>
+      <width>230</width>
+      <height>231</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -73,12 +73,19 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>Georgia</family>
+         <pointsize>8</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(13, 63, 245);
 background-color: rgb(170, 248, 242);</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Thông tin bệnh nhân&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;font-family:Time news roman&quot;&gt;Thông tin bệnh nhân&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="indent">
         <number>-1</number>
@@ -87,6 +94,11 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_name">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
@@ -97,6 +109,11 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="1" column="1">
       <widget class="QLabel" name="label_namepatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nguyễn Văn A</string>
        </property>
@@ -104,6 +121,12 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_birth">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <kerning>true</kerning>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
@@ -114,6 +137,11 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="2" column="1">
       <widget class="QLabel" name="label_birthpatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>01/01/1999</string>
        </property>
@@ -121,6 +149,11 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_gender">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
@@ -131,8 +164,97 @@ background-color: rgb(170, 248, 242);</string>
      </item>
      <item row="3" column="1">
       <widget class="QLabel" name="label_genderpatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nam</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_address">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Quê quán</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_addresspatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Hoàn Kiếm, Hà Nội</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_heightimage">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Chiều cao ảnh</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_heightimagepatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>450px</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_widthimage">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Chiều rộng ảnh</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_widthimagepatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>500px</string>
        </property>
       </widget>
      </item>
@@ -170,8 +292,8 @@ background-color: rgb(170, 248, 242);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1350</width>
-     <height>22</height>
+     <width>1338</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
