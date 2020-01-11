@@ -13,10 +13,11 @@ namespace dicom_extract {
     /**
      * @brief
      * @param pathIn
+     * @param pathOut
      * @param res
      * @return
      */
-    int extract_info(const std::string &pathIn, std::vector<Dicom> &res);
+    int extract_info(const std::string &pathIn, std::string &pathOut, std::vector<std::string> &res);
 
     /**
      * @brief convert dicom image to OpenCV Mat

@@ -1,3 +1,0 @@
-/home/dungpb/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dungpb/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir
-/home/dungpb/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/edit_cache.dir
