@@ -39,6 +39,7 @@ private:
     QStringList images;
 //    QDir directory;
     QString listFolderPath;
+    std::vector<Dicom> dicoms;
 
 //Informations of people
      std::vector<std::string> abt;

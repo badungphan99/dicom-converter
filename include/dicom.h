@@ -13,6 +13,12 @@ private:
     std::string file_name;
     std::string patient_position;
     std::string uid;
+    std::string sex;
+    std::string patient_id;
+    std::string photometric_nterpretation;
+    std::string bits_allocated;
+    std::string bits_stored;
+    std::string high_bit;
 
 private:
     cv::Mat img_data;
@@ -35,6 +41,26 @@ public:
 
     void setSex(const std::string &sex);
 
+    const std::string &getPatientId() const;
+
+    void setPatientId(const std::string &patientId);
+
+    const std::string &getPhotometricNterpretation() const;
+
+    void setPhotometricNterpretation(const std::string &photometricNterpretation);
+
+    const std::string &getBitsAllocated() const;
+
+    void setBitsAllocated(const std::string &bitsAllocated);
+
+    const std::string &getBitsStored() const;
+
+    void setBitsStored(const std::string &bitsStored);
+
+    const std::string &getHighBit() const;
+
+    void setHighBit(const std::string &highBit);
+
     const cv::Mat &getImgData() const;
 
     void setImgData(const cv::Mat &imgData);
@@ -43,7 +69,7 @@ public:
 
     void setImgVis(const cv::Mat &imgVis);
 
-    std::string sex;
+
 };
 
 

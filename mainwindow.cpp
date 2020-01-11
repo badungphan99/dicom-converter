@@ -11,20 +11,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    abt.push_back("Tran Thi An");
-    abt.push_back("17/11/1958");
-    abt.push_back("Nu");
-    abt.push_back("Hoan Kiem, Ha Noi");
-    abt.push_back("800px");
-    abt.push_back("1200px");
-
-    ui->label_namepatient->setText(QString::fromUtf8(abt[0].c_str()));
-    ui->label_birthpatient->setText(QString::fromUtf8(abt[1].c_str()));
-    ui->label_genderpatient->setText(QString::fromUtf8(abt[2].c_str()));
-    ui->label_addresspatient->setText(QString::fromUtf8(abt[3].c_str()));
-    ui->label_heightimagepatient->setText(QString::fromUtf8(abt[4].c_str()));
-    ui->label_widthimagepatient->setText(QString::fromUtf8(abt[5].c_str()));
 }
 
 MainWindow::~MainWindow()
@@ -70,12 +56,19 @@ void MainWindow::on_actionLoad_Image_triggered()
     // duong dan thu muc out
     std::string pathOut;
     // cac thong tin tra ve, hien tai khong co gi dau
-    std::vector<std::string> info;
+    std::vector<Dicom> dicoms;
 
-    dicom_extract::extract_info(listFolderPath.toStdString(), pathOut, info);
+    dicom_extract::extract_info(listFolderPath.toStdString(), pathOut, dicoms);
 
     std::cout << "extract xong\n";
 
+
+        ui->label_namepatient->setText(QString::fromUtf8(dicoms[0].getPatientId().c_str()));
+//    ui->label_birthpatient->setText(QString::fromUtf8(abt[1].c_str()));
+        ui->label_genderpatient->setText(QString::fromUtf8(dicoms[0].getSex().c_str()));
+//    ui->label_addresspatient->setText(QString::fromUtf8(abt[3].c_str()));
+//    ui->label_heightimagepatient->setText(QString::fromUtf8(abt[4].c_str()));
+//    ui->label_widthimagepatient->setText(QString::fromUtf8(abt[5].c_str()));
     listFolderPath = QString::fromUtf8(pathOut.c_str());
 
     QDir directory(listFolderPath);

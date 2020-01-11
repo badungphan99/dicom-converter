@@ -36,6 +36,46 @@ void Dicom::setSex(const std::string &sex) {
     Dicom::sex = sex;
 }
 
+const std::string &Dicom::getPatientId() const {
+    return patient_id;
+}
+
+void Dicom::setPatientId(const std::string &patientId) {
+    patient_id = patientId;
+}
+
+const std::string &Dicom::getPhotometricNterpretation() const {
+    return photometric_nterpretation;
+}
+
+void Dicom::setPhotometricNterpretation(const std::string &photometricNterpretation) {
+    photometric_nterpretation = photometricNterpretation;
+}
+
+const std::string &Dicom::getBitsAllocated() const {
+    return bits_allocated;
+}
+
+void Dicom::setBitsAllocated(const std::string &bitsAllocated) {
+    bits_allocated = bitsAllocated;
+}
+
+const std::string &Dicom::getBitsStored() const {
+    return bits_stored;
+}
+
+void Dicom::setBitsStored(const std::string &bitsStored) {
+    bits_stored = bitsStored;
+}
+
+const std::string &Dicom::getHighBit() const {
+    return high_bit;
+}
+
+void Dicom::setHighBit(const std::string &highBit) {
+    high_bit = highBit;
+}
+
 const cv::Mat &Dicom::getImgData() const {
     return img_data;
 }
