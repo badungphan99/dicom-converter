@@ -11,6 +11,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    abt.push_back("name");
+    abt.push_back("dmbodo");
+    ui->label_namepatient->setText(QString::fromUtf8(abt[0].c_str()));
+    ui->label_birthpatient->setText(QString::fromUtf8(abt[1].c_str()));
+    ui->label_genderpatient->setText("Nu");
+
 }
 
 MainWindow::~MainWindow()
