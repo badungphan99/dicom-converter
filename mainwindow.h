@@ -39,5 +39,8 @@ private:
     QStringList images;
 //    QDir directory;
     QString listFolderPath;
+
+//Informations of people
+     std::vector<std::string> abt;
 };
 #endif // MAINWINDOW_H
