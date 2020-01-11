@@ -11,15 +11,12 @@
 namespace dicom_extract {
 
     /**
-     * @brief extract infomation from dicom package to image and text file
-     * @param pathIn:
-     * @param pathOut
-     * @param info
-     * @param saveImg
-     * @param saveInfo
+     * @brief
+     * @param pathIn
+     * @param res
      * @return
      */
-    int extract_info(const std::string &pathIn, const std::string &pathOut, std::string &info, const int &saveImg, const int &saveInfo);
+    int extract_info(const std::string &pathIn, std::vector<Dicom> &res);
 
     /**
      * @brief convert dicom image to OpenCV Mat
@@ -30,7 +27,12 @@ namespace dicom_extract {
      */
     int dicom_img_to_mat(const std::string &dirPath, const std::string &fileName, Dicom &res);
 
-//    int convert_rt_to_mat(const std::string &path_rt_file, )
+//    int convert_rt_to_mat(std::string &pathRT, std::map<OFString, std::pair<DcmDataset, std::string>> &SOPInstances,
+//                          std::vector<Dicom> &res);
+//
+//    int getRoiNames(DcmDataset &dataset, std::vector<OFString> &res);
+
+
 };
 
 

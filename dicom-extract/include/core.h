@@ -7,6 +7,9 @@
 
 #include <string>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <dcmtk/dcmdata/dctk.h>
+#include <dcmtk/dcmimgle/dcmimage.h>
+#include <map>
 
 #define CT_IMAGE "CT"
 #define RT_STRCUT "RT"

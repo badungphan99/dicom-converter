@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/dungpb/Work/dicom-converter/dicom-extract/main.cpp
+../include/core.h
+string
+-
+opencv2/imgproc/imgproc.hpp
+-
+
+../include/dicom.h
+core.h
+../include/core.h
+
+../include/dicom_extract.h
+core.h
+../include/core.h
+dicom.h
+../include/dicom.h
+
+/Users/dungpb/dev/dicom-converter/dicom-extract/main.cpp
 iostream
 -
+
+/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.cpp
+dicom.h
+/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.h
+
+/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.cpp
+dicom_extract.h
+/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.h
 

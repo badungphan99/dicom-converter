@@ -4,15 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dungpb/Work/dicom-converter/dicom-extract/main.cpp" "/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/main.cpp.o"
-  "/home/dungpb/Work/dicom-converter/dicom-extract/src/dicom.cpp" "/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/src/dicom.cpp.o"
-  "/home/dungpb/Work/dicom-converter/dicom-extract/src/dicom_extract.cpp" "/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o"
+  "/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.cpp" "/Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/src/dicom.cpp.o"
+  "/Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.cpp" "/Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
+  "/usr/local/include"
+  "/usr/local/include/opencv"
   )
 
 # Targets to which this target links.

@@ -3,3 +3,12 @@
 
 CMakeFiles/dicom_extract.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/dicom_extract.dir/src/dicom.cpp.o: ../include/core.h
+CMakeFiles/dicom_extract.dir/src/dicom.cpp.o: ../include/dicom.h
+CMakeFiles/dicom_extract.dir/src/dicom.cpp.o: ../src/dicom.cpp
+
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../include/core.h
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../include/dicom.h
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../include/dicom_extract.h
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../src/dicom_extract.cpp
+

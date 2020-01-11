@@ -9,11 +9,16 @@
 
 class Dicom {
 
-public:
+private:
     std::string file_name;
     std::string patient_position;
     std::string uid;
 
+private:
+    cv::Mat img_data;
+    cv::Mat img_vis;
+
+public:
     const std::string &getFileName() const;
 
     void setFileName(const std::string &fileName);
@@ -39,10 +44,6 @@ public:
     void setImgVis(const cv::Mat &imgVis);
 
     std::string sex;
-
-private:
-    cv::Mat img_data;
-    cv::Mat img_vis;
 };
 
 

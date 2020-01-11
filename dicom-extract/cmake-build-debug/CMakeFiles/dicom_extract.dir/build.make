@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dungpb/Work/dicom-converter/dicom-extract
+CMAKE_SOURCE_DIR = /Users/dungpb/dev/dicom-converter/dicom-extract
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dicom_extract.dir/depend.make
@@ -57,60 +57,132 @@ include CMakeFiles/dicom_extract.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/dicom_extract.dir/flags.make
 
-CMakeFiles/dicom_extract.dir/main.cpp.o: CMakeFiles/dicom_extract.dir/flags.make
-CMakeFiles/dicom_extract.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dicom_extract.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dicom_extract.dir/main.cpp.o -c /home/dungpb/Work/dicom-converter/dicom-extract/main.cpp
-
-CMakeFiles/dicom_extract.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dicom_extract.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dungpb/Work/dicom-converter/dicom-extract/main.cpp > CMakeFiles/dicom_extract.dir/main.cpp.i
-
-CMakeFiles/dicom_extract.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dicom_extract.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dungpb/Work/dicom-converter/dicom-extract/main.cpp -o CMakeFiles/dicom_extract.dir/main.cpp.s
-
-CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: CMakeFiles/dicom_extract.dir/flags.make
-CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../src/dicom_extract.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o -c /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom_extract.cpp
-
-CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom_extract.cpp > CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i
-
-CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom_extract.cpp -o CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s
-
 CMakeFiles/dicom_extract.dir/src/dicom.cpp.o: CMakeFiles/dicom_extract.dir/flags.make
 CMakeFiles/dicom_extract.dir/src/dicom.cpp.o: ../src/dicom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dicom_extract.dir/src/dicom.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dicom_extract.dir/src/dicom.cpp.o -c /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dicom_extract.dir/src/dicom.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dicom_extract.dir/src/dicom.cpp.o -c /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.cpp
 
 CMakeFiles/dicom_extract.dir/src/dicom.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dicom_extract.dir/src/dicom.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom.cpp > CMakeFiles/dicom_extract.dir/src/dicom.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.cpp > CMakeFiles/dicom_extract.dir/src/dicom.cpp.i
 
 CMakeFiles/dicom_extract.dir/src/dicom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dicom_extract.dir/src/dicom.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dungpb/Work/dicom-converter/dicom-extract/src/dicom.cpp -o CMakeFiles/dicom_extract.dir/src/dicom.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom.cpp -o CMakeFiles/dicom_extract.dir/src/dicom.cpp.s
+
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: CMakeFiles/dicom_extract.dir/flags.make
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o: ../src/dicom_extract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o -c /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.cpp
+
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.cpp > CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.i
+
+CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dungpb/dev/dicom-converter/dicom-extract/src/dicom_extract.cpp -o CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.s
 
 # Object files for target dicom_extract
 dicom_extract_OBJECTS = \
-"CMakeFiles/dicom_extract.dir/main.cpp.o" \
-"CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o" \
-"CMakeFiles/dicom_extract.dir/src/dicom.cpp.o"
+"CMakeFiles/dicom_extract.dir/src/dicom.cpp.o" \
+"CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o"
 
 # External object files for target dicom_extract
 dicom_extract_EXTERNAL_OBJECTS =
 
-dicom_extract: CMakeFiles/dicom_extract.dir/main.cpp.o
-dicom_extract: CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o
 dicom_extract: CMakeFiles/dicom_extract.dir/src/dicom.cpp.o
+dicom_extract: CMakeFiles/dicom_extract.dir/src/dicom_extract.cpp.o
 dicom_extract: CMakeFiles/dicom_extract.dir/build.make
+dicom_extract: /usr/local/lib/libopencv_stitching.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_superres.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_videostab.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_aruco.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_bgsegm.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_bioinspired.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_ccalib.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_dnn_objdetect.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_dpm.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_face.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_fuzzy.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_hdf.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_hfs.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_img_hash.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_line_descriptor.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_optflow.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_reg.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_rgbd.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_saliency.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_stereo.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_structured_light.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_surface_matching.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_tracking.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_xfeatures2d.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_ximgproc.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_xobjdetect.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_xphoto.3.4.8.dylib
+dicom_extract: /usr/local/lib/libofstd.a
+dicom_extract: /usr/local/lib/liboflog.a
+dicom_extract: /usr/local/lib/libdcmdata.a
+dicom_extract: /usr/local/lib/libi2d.a
+dicom_extract: /usr/local/lib/libdcmimgle.a
+dicom_extract: /usr/local/lib/libdcmimage.a
+dicom_extract: /usr/local/lib/libdcmjpeg.a
+dicom_extract: /usr/local/lib/libijg8.a
+dicom_extract: /usr/local/lib/libijg12.a
+dicom_extract: /usr/local/lib/libijg16.a
+dicom_extract: /usr/local/lib/libdcmjpls.a
+dicom_extract: /usr/local/lib/libcharls.a
+dicom_extract: /usr/local/lib/libdcmtls.a
+dicom_extract: /usr/local/lib/libdcmnet.a
+dicom_extract: /usr/local/lib/libdcmsr.a
+dicom_extract: /usr/local/lib/libcmr.a
+dicom_extract: /usr/local/lib/libdcmdsig.a
+dicom_extract: /usr/local/lib/libdcmwlm.a
+dicom_extract: /usr/local/lib/libdcmqrdb.a
+dicom_extract: /usr/local/lib/libdcmpstat.a
+dicom_extract: /usr/local/lib/libdcmrt.a
+dicom_extract: /usr/local/lib/libdcmiod.a
+dicom_extract: /usr/local/lib/libdcmfg.a
+dicom_extract: /usr/local/lib/libdcmseg.a
+dicom_extract: /usr/local/lib/libdcmtract.a
+dicom_extract: /usr/local/lib/libdcmpmap.a
+dicom_extract: /usr/local/lib/libopencv_shape.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_highgui.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_videoio.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_phase_unwrapping.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_video.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_datasets.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_plot.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_text.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_dnn.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_ml.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_imgcodecs.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_objdetect.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_calib3d.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_features2d.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_flann.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_photo.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_imgproc.3.4.8.dylib
+dicom_extract: /usr/local/lib/libopencv_core.3.4.8.dylib
+dicom_extract: /usr/local/lib/libdcmtls.a
+dicom_extract: /usr/local/lib/libdcmsr.a
+dicom_extract: /usr/local/lib/libdcmimage.a
+dicom_extract: /usr/lib/libxml2.dylib
+dicom_extract: /usr/local/lib/libdcmdsig.a
+dicom_extract: /usr/local/lib/libdcmqrdb.a
+dicom_extract: /usr/local/lib/libdcmnet.a
+dicom_extract: /usr/local/lib/libdcmimgle.a
+dicom_extract: /usr/local/lib/libdcmfg.a
+dicom_extract: /usr/local/lib/libdcmiod.a
+dicom_extract: /usr/local/lib/libdcmdata.a
+dicom_extract: /usr/local/lib/liboflog.a
+dicom_extract: /usr/local/lib/libofstd.a
+dicom_extract: /usr/lib/libiconv.dylib
+dicom_extract: /usr/lib/libcharset.dylib
+dicom_extract: /usr/lib/libz.dylib
 dicom_extract: CMakeFiles/dicom_extract.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dicom_extract"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dicom_extract"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dicom_extract.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +195,6 @@ CMakeFiles/dicom_extract.dir/clean:
 .PHONY : CMakeFiles/dicom_extract.dir/clean
 
 CMakeFiles/dicom_extract.dir/depend:
-	cd /home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dungpb/Work/dicom-converter/dicom-extract /home/dungpb/Work/dicom-converter/dicom-extract /home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug /home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug /home/dungpb/Work/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dungpb/dev/dicom-converter/dicom-extract /Users/dungpb/dev/dicom-converter/dicom-extract /Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug /Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug /Users/dungpb/dev/dicom-converter/dicom-extract/cmake-build-debug/CMakeFiles/dicom_extract.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dicom_extract.dir/depend
 
