@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStringList>
+#include <QDir>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +22,18 @@ private slots:
 
     void on_actionSave_Image_triggered();
 
+    void on_actionLoad_Image_triggered();
+
+    void on_pushButton_previous_clicked();
+
+    void on_pushButton_next_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QStringList listImage;
+    int index = -1;
+    QStringList images;
+//    QDir directory;
+    QString listFolderPath;
 };
 #endif // MAINWINDOW_H

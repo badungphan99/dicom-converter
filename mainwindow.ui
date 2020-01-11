@@ -35,7 +35,7 @@
       <x>70</x>
       <y>20</y>
       <width>1000</width>
-      <height>650</height>
+      <height>581</height>
      </rect>
     </property>
     <property name="text">
@@ -138,6 +138,32 @@ background-color: rgb(170, 248, 242);</string>
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButton_previous">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>660</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Previous</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_next">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>660</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -154,6 +180,7 @@ background-color: rgb(170, 248, 242);</string>
     </property>
     <addaction name="actionSelect_Image"/>
     <addaction name="actionSave_Image"/>
+    <addaction name="actionLoad_Image"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -183,6 +210,11 @@ background-color: rgb(170, 248, 242);</string>
   <action name="actionSave_Image">
    <property name="text">
     <string>Save Image</string>
+   </property>
+  </action>
+  <action name="actionLoad_Image">
+   <property name="text">
+    <string>Load Image</string>
    </property>
   </action>
  </widget>
