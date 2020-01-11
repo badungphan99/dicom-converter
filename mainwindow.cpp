@@ -11,12 +11,20 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    abt.push_back("name");
-    abt.push_back("dmbodo");
+
+    abt.push_back("Tran Thi An");
+    abt.push_back("17/11/1958");
+    abt.push_back("Nu");
+    abt.push_back("Hoan Kiem, Ha Noi");
+    abt.push_back("800px");
+    abt.push_back("1200px");
+
     ui->label_namepatient->setText(QString::fromUtf8(abt[0].c_str()));
     ui->label_birthpatient->setText(QString::fromUtf8(abt[1].c_str()));
-    ui->label_genderpatient->setText("Nu");
-
+    ui->label_genderpatient->setText(QString::fromUtf8(abt[2].c_str()));
+    ui->label_addresspatient->setText(QString::fromUtf8(abt[3].c_str()));
+    ui->label_heightimagepatient->setText(QString::fromUtf8(abt[4].c_str()));
+    ui->label_widthimagepatient->setText(QString::fromUtf8(abt[5].c_str()));
 }
 
 MainWindow::~MainWindow()
