@@ -3,6 +3,9 @@
 #include <QFileDialog>
 #include <QString>
 #include <QImage>
+#include <QStringList>
+#include <iostream>
+using namespace std;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -18,7 +21,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionSelect_Image_triggered()
 {
-    const QString folderPath = QFileDialog::getOpenFileName(this, "Select file", "Images(*.png, *.jpg)");
+    const QString folderPath = QFileDialog::getOpenFileName(this, "Select file",QString(), tr("Images(*.png *.jpg)"));
 
     if(!folderPath.isEmpty()){
         int w = ui->label_pic->width();
@@ -27,4 +30,63 @@ void MainWindow::on_actionSelect_Image_triggered()
         QImage image(folderPath);
         ui->label_pic->setPixmap(QPixmap::fromImage(image.scaled(w, h, Qt::KeepAspectRatio)));
     }
+}
+
+
+void MainWindow::on_actionSave_Image_triggered()
+{
+
+    const QString fileName = QFileDialog::getSaveFileName(this, "Save file",QString(), "Images(*.png *.jpg)");
+
+    const QPixmap* pixmap = ui->label_pic->pixmap();
+    if (pixmap){
+        QImage image1(pixmap -> toImage());
+        if (!fileName.isEmpty()){
+            image1.save(fileName);
+        }
+    }
+
+}
+
+void MainWindow::on_actionLoad_Image_triggered()
+{
+    listFolderPath = QFileDialog::getExistingDirectory(this, "Select file","/home",QFileDialog::ShowDirsOnly);
+
+    std::cout << listFolderPath.toStdString() << std::endl;
+
+    QDir directory(listFolderPath);
+    images = directory.entryList(QStringList() << "*.jpg" << "*.JPG",QDir::Files);
+
+    foreach(QString filename, images) {
+            std::cout << filename.toStdString() << std::endl;
+    }
+}
+
+void MainWindow::on_pushButton_previous_clicked()
+{
+    QDir directory(listFolderPath);
+    index = max(0, index-1);
+    if (index >= 0){
+        int w = ui->label_pic->width();
+        int h = ui->label_pic->height();
+        QString path = directory.filePath(images.at(index));
+        std::cout << path.toStdString() << std::endl;
+        QImage image(path);
+        ui->label_pic->setPixmap(QPixmap::fromImage(image.scaled(w, h, Qt::KeepAspectRatio)));
+    }
+}
+
+void MainWindow::on_pushButton_next_clicked()
+{
+    QDir directory(listFolderPath);
+    index = min(index+1, images.size()-1);
+    if (index < images.size()){
+        int w = ui->label_pic->width();
+        int h = ui->label_pic->height();
+        QString path = directory.filePath(images.at(index));
+        std::cout << path.toStdString() << std::endl;
+        QImage image(path);
+        ui->label_pic->setPixmap(QPixmap::fromImage(image.scaled(w, h, Qt::KeepAspectRatio)));
+    }
+
 }
