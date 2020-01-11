@@ -76,8 +76,10 @@ void MainWindow::on_actionLoad_Image_triggered()
 
     std::cout << "extract xong\n";
 
+    listFolderPath = QString::fromUtf8(pathOut.c_str());
+
     QDir directory(listFolderPath);
-    images = directory.entryList(QStringList() << "*.jpg" << "*.JPG",QDir::Files);
+    images = directory.entryList(QStringList() << "*.png" << "*.PNG",QDir::Files);
 
     foreach(QString filename, images) {
             std::cout << filename.toStdString() << std::endl;
