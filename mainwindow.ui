@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1304</width>
+    <width>1403</width>
     <height>690</height>
    </rect>
   </property>
@@ -45,7 +45,7 @@
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>670</x>
+      <x>650</x>
       <y>10</y>
       <width>41</width>
       <height>541</height>
@@ -58,10 +58,10 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>790</x>
+      <x>750</x>
       <y>10</y>
-      <width>441</width>
-      <height>251</height>
+      <width>571</width>
+      <height>301</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -845,7 +845,7 @@ background-color: rgb(170, 248, 242);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1304</width>
+     <width>1403</width>
      <height>26</height>
     </rect>
    </property>
