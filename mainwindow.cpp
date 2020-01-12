@@ -30,6 +30,11 @@ void MainWindow::on_actionSelect_Image_triggered()
         QImage image(folderPath);
         ui->label_pic->setPixmap(QPixmap::fromImage(image.scaled(w, h, Qt::KeepAspectRatio)));
     }
+
+    QDir dir("/tmp/dungpbhoangnvcucntkhanhptt");
+    if (dir.exists("/tmp/dungpbhoangnvcucntkhanhptt")){
+        dir.removeRecursively();
+    }
 }
 
 
@@ -46,19 +51,32 @@ void MainWindow::on_actionSave_Image_triggered()
         }
     }
 
+    QDir dir("/tmp/dungpbhoangnvcucntkhanhptt");
+    if (dir.exists("/tmp/dungpbhoangnvcucntkhanhptt")){
+        dir.removeRecursively();
+    }
 }
 
 void MainWindow::on_actionLoad_Image_triggered()
 {
-    listFolderPath = QFileDialog::getExistingDirectory(this, "Select file","/home",QFileDialog::ShowDirsOnly);
+    folderPath = QFileDialog::getExistingDirectory(this, "Select file","/home",QFileDialog::ShowDirsOnly);
+    index=-1;
 
-    std::cout << listFolderPath.toStdString() << std::endl;
+
+    std::cout << folderPath.toStdString() << std::endl;
     // duong dan thu muc out
     std::string pathOut;
     // cac thong tin tra ve, hien tai khong co gi dau
     std::vector<Dicom> dicoms;
 
-    dicom_extract::extract_info(listFolderPath.toStdString(), pathOut, dicoms);
+    QDir dir("/tmp/dungpbhoangnvcucntkhanhptt");
+    if (dir.exists("/tmp/dungpbhoangnvcucntkhanhptt")){
+        dir.removeRecursively();
+    }
+
+
+    dicom_extract::extract_info(folderPath.toStdString(), pathOut, dicoms);
+
 
     std::cout << "extract xong\n";
 
@@ -74,19 +92,21 @@ void MainWindow::on_actionLoad_Image_triggered()
         ui->label_hight_bitpatient->setText(QString::fromUtf8(dicoms[0].getHighBit().c_str()));
 
 
-    listFolderPath = QString::fromUtf8(pathOut.c_str());
+    folderPath = QString::fromUtf8(pathOut.c_str());
 
-    QDir directory(listFolderPath);
+    QDir directory(folderPath);
     images = directory.entryList(QStringList() << "*.png" << "*.PNG",QDir::Files);
 
     foreach(QString filename, images) {
             std::cout << filename.toStdString() << std::endl;
     }
+
+
 }
 
 void MainWindow::on_pushButton_previous_clicked()
 {
-    QDir directory(listFolderPath);
+    QDir directory(folderPath);
     index = max(0, index-1);
     if (index >= 0){
         int w = ui->label_pic->width();
@@ -100,7 +120,7 @@ void MainWindow::on_pushButton_previous_clicked()
 
 void MainWindow::on_pushButton_next_clicked()
 {
-    QDir directory(listFolderPath);
+    QDir directory(folderPath);
     index = min(index+1, images.size()-1);
     if (index < images.size()){
         int w = ui->label_pic->width();

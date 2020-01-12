@@ -34,11 +34,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QStringList listImage;
-    int index = -1;
+//    QStringList listImage;
+    int index;
     QStringList images;
 //    QDir directory;
-    QString listFolderPath;
+    QString folderPath;
     std::vector<Dicom> dicoms;
 
 //Informations of people
