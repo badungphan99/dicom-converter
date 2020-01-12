@@ -65,7 +65,7 @@ void MainWindow::on_actionLoad_Image_triggered()
 
         ui->label_file_namepatient->setText(QString::fromUtf8(dicoms[0].getFileName().c_str()));
         ui->label_positionpatient->setText(QString::fromUtf8(dicoms[0].getPatientPosition().c_str()));
-        ui->label_uid->setText(QString::fromUtf8(dicoms[0].getUid().c_str()));
+        ui->label_uidpatient->setText(QString::fromUtf8(dicoms[0].getUid().c_str()));
         ui->label_sexpatient->setText(QString::fromUtf8(dicoms[0].getSex().c_str()));
         ui->labe_idpatient->setText(QString::fromUtf8(dicoms[0].getPatientId().c_str()));
         ui->label_photometric_nterpretationpatient->setText(QString::fromUtf8(dicoms[0].getPhotometricNterpretation().c_str()));
