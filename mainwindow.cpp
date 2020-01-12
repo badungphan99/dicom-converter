@@ -63,12 +63,17 @@ void MainWindow::on_actionLoad_Image_triggered()
     std::cout << "extract xong\n";
 
 
-        ui->label_namepatient->setText(QString::fromUtf8(dicoms[0].getPatientId().c_str()));
-//    ui->label_birthpatient->setText(QString::fromUtf8(abt[1].c_str()));
-        ui->label_genderpatient->setText(QString::fromUtf8(dicoms[0].getSex().c_str()));
-//    ui->label_addresspatient->setText(QString::fromUtf8(abt[3].c_str()));
-//    ui->label_heightimagepatient->setText(QString::fromUtf8(abt[4].c_str()));
-//    ui->label_widthimagepatient->setText(QString::fromUtf8(abt[5].c_str()));
+        ui->label_file_namepatient->setText(QString::fromUtf8(dicoms[0].getFileName().c_str()));
+        ui->label_positionpatient->setText(QString::fromUtf8(dicoms[0].getPatientPosition().c_str()));
+        ui->label_uid->setText(QString::fromUtf8(dicoms[0].getUid().c_str()));
+        ui->label_sexpatient->setText(QString::fromUtf8(dicoms[0].getSex().c_str()));
+        ui->labe_idpatient->setText(QString::fromUtf8(dicoms[0].getPatientId().c_str()));
+        ui->label_photometric_nterpretationpatient->setText(QString::fromUtf8(dicoms[0].getPhotometricNterpretation().c_str()));
+        ui->label_bits_allocatedpatient->setText(QString::fromUtf8(dicoms[0].getBitsAllocated().c_str()));
+        ui->label_bits_storedpatient->setText(QString::fromUtf8(dicoms[0].getBitsStored().c_str()));
+        ui->label_hight_bitpatient->setText(QString::fromUtf8(dicoms[0].getHighBit().c_str()));
+
+
     listFolderPath = QString::fromUtf8(pathOut.c_str());
 
     QDir directory(listFolderPath);

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1214</width>
-    <height>719</height>
+    <width>1304</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="sizeIncrement">
@@ -34,8 +34,8 @@
      <rect>
       <x>30</x>
       <y>20</y>
-      <width>791</width>
-      <height>521</height>
+      <width>751</width>
+      <height>511</height>
      </rect>
     </property>
     <property name="text">
@@ -58,10 +58,10 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>940</x>
+      <x>930</x>
       <y>10</y>
-      <width>251</width>
-      <height>241</height>
+      <width>321</width>
+      <height>271</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -85,7 +85,7 @@
 background-color: rgb(170, 248, 242);</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;font-family:Time news roman&quot;&gt;Thông tin bệnh nhân&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;font-family:Time news roman&quot;&gt;Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="indent">
         <number>-1</number>
@@ -93,7 +93,7 @@ background-color: rgb(170, 248, 242);</string>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_name">
+      <widget class="QLabel" name="label_file_name">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -103,24 +103,24 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
        <property name="text">
-        <string>Họ tên</string>
+        <string>File_name</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLabel" name="label_namepatient">
+      <widget class="QLabel" name="label_file_namepatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Nguyễn Văn A</string>
+        <string>AF-0214-150B</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="label_birth">
+      <widget class="QLabel" name="label_position">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -131,12 +131,12 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
        <property name="text">
-        <string>Ngày sinh</string>
+        <string>Position</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLabel" name="label_birthpatient">
+      <widget class="QLabel" name="label_positionpatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -148,7 +148,7 @@ background-color: rgb(170, 248, 242);</string>
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="label_gender">
+      <widget class="QLabel" name="label_uid">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -158,24 +158,24 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245);</string>
        </property>
        <property name="text">
-        <string>Giới tính</string>
+        <string>Uid</string>
        </property>
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLabel" name="label_genderpatient">
+      <widget class="QLabel" name="label_uidpatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Nam</string>
+        <string>D1545</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="label_address">
+      <widget class="QLabel" name="label_sex">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -185,24 +185,24 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245)</string>
        </property>
        <property name="text">
-        <string>Quê quán</string>
+        <string>Sex</string>
        </property>
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLabel" name="label_addresspatient">
+      <widget class="QLabel" name="label_sexpatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Hoàn Kiếm, Hà Nội</string>
+        <string>F</string>
        </property>
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QLabel" name="label_heightimage">
+      <widget class="QLabel" name="label_id">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -212,24 +212,51 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245)</string>
        </property>
        <property name="text">
-        <string>Chiều cao ảnh</string>
+        <string>Id</string>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLabel" name="label_heightimagepatient">
+      <widget class="QLabel" name="labe_idpatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>450px</string>
+        <string>A1212</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_photometric_nterpretationpatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ex</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_bits_allocated">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Bits_allocated</string>
        </property>
       </widget>
      </item>
      <item row="6" column="0">
-      <widget class="QLabel" name="label_widthimage">
+      <widget class="QLabel" name="label_photometric_nterpretation">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
@@ -242,25 +269,82 @@ background-color: rgb(170, 248, 242);</string>
         <string notr="true">color: rgb(13, 63, 245)</string>
        </property>
        <property name="text">
-        <string>Chiều rộng ảnh</string>
+        <string>Photometric_nterpretation</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="label_widthimagepatient">
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_bits_allocatedpatient">
        <property name="font">
         <font>
          <pointsize>11</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>500px</string>
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_bits_stored">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Bits_stored</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLabel" name="label_bits_storedpatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_hight_bit">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(13, 63, 245)</string>
+       </property>
+       <property name="text">
+        <string>Hight_bit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="label_hight_bitpatient">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="pushButton_previous">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -284,9 +368,9 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -365,9 +449,9 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -430,9 +514,9 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -511,9 +595,9 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -576,9 +660,9 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -648,18 +732,18 @@ background-color: rgb(170, 248, 242);</string>
        <colorrole role="Base">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
        <colorrole role="Window">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>170</red>
-          <green>248</green>
-          <blue>242</blue>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
          </color>
         </brush>
        </colorrole>
@@ -721,13 +805,14 @@ background-color: rgb(170, 248, 242);</string>
      </font>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>Previous</string>
     </property>
     <property name="icon">
-     <iconset theme="pre"/>
+     <iconset theme="pre">
+      <normaloff>.</normaloff>.</iconset>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_next">
@@ -760,7 +845,7 @@ background-color: rgb(170, 248, 242);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1214</width>
+     <width>1304</width>
      <height>26</height>
     </rect>
    </property>
